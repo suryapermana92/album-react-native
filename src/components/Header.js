@@ -1,25 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import axios from 'axios';
 
-const Header = () => {
-    const { titleStyle, viewStyle } = styles;
-
-    const weather = 'http://api.openweathermap.org/data/2.5/weather?q=Jakarta&appid=0fb96df37506f1175d52250c72f0e840';
-  
-    axios.get(weather)
-        .then((response) => {
-        console.log('SUCCESS', response);
-    }).catch((error) => {
-        console.log('ERROR', error);
-    });
-
-    return (
-    <View style={viewStyle}>
-      <Text style={titleStyle}>Welcome to React Native Course</Text>
-      </View>
-  );
+class Header extends Component {
+    componentWillMount() {
+    
+        const weather = 'http://api.openweathermap.org/data/2.5/weather?q=Serpong&appid=0fb96df37506f1175d52250c72f0e840';
+    
+        axios.get('http://api.openweathermap.org/data/2.5/weather?q=Serpong&appid=0fb96df37506f1175d52250c72f0e840')
+            .then((response) => {
+            console.log('SUCCESS', response);
+        }).catch((error) => {
+            console.log('ERROR', error);
+        });
+    }
+    render() {
+        return (
+            <View style={viewStyle}>
+            <Text style={titleStyle}>Welcome to React Native Course</Text>
+            </View>
+        );
+    }
 };
+
 const styles = {
     viewStyle: {
         backgroundColor: '#A4E7F0',
@@ -37,5 +40,7 @@ const styles = {
         textAlign: 'center'
     }
 };
+const { titleStyle, viewStyle } = styles;
+
 
 export default Header;
