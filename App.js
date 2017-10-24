@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, ScrollView } from 'react-native';
-import Header from './src/components/Header'
-
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 const App = () => {
   const { backgroundStyle, authorStyle, dateStyle, contentStyle } = styles;
@@ -10,79 +10,14 @@ const App = () => {
   return (
     
     <View style={backgroundStyle}>
-      <View>
+     
       
-      <Header />
-      <Text style={authorStyle}>Posted by Surya Permana</Text>
-      <Text style={dateStyle}>on {date}</Text>
-      <ScrollView style={{ marginTop: 10, elevation: 5 }}>
-      <Text style={contentStyle}>
-      Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.
-      Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.
-      Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.Lorem ipsum dolor sit amet, ex usu iriure explicari abhorreant. 
-      Eos cu dicunt graecis mandamus.
-      Vis id veritus dissentias, has fugit quidam tincidunt in.
-      Ad zril percipitur mel, ius quando tritani ad, in qui propriae oportere aliquando.
-      Animal efficiendi id pri, duo ea saepe ignota.
-      Utroque quaerendum adversarium usu ex, vix cu paulo indoctum. 
-      Sed at atqui alterum appareat.
-      
-        </Text>
-        </ScrollView>
-    </View>
-    </View>
+      <Header title='My Albums' />
+      <AlbumList />
     
-  );
-};
-
+      </View>
+  )
+}
 const styles = {
   backgroundStyle: {
     backgroundColor: '#FFFFFF',
@@ -110,5 +45,4 @@ const styles = {
     
   }
 };
-
 export default App;

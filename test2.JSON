@@ -1,0 +1,30 @@
+    [
+        {
+          "id": "1",
+          "nama": "restoran padang",
+          "koordinat": "11,22",
+          "jamBuka": "10.00",
+          "jamTutup": "17.00"
+        },
+        {
+          "id": "2",
+          "nama": "bakmi bangka",
+          "koordinat": "18,28",
+          "jamBuka": "06.00",
+          "jamTutup": "12.00"
+        },
+        {
+          "id": "3",
+          "nama": "cafe nongkrong",
+          "koordinat": "-5,7",
+          "jamBuka": "17.00",
+          "jamTutup": "24.00"
+        },
+        {
+          "id": "4",
+          "nama": "jajanan pasar",
+          "koordinat": "-4,12",
+          "jamBuka": "05.00",
+          "jamTutup": "10.00"
+        }
+      ]
